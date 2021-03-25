@@ -1,0 +1,6 @@
+  - name: Install a list of package "mlocate,zip,dump,rsync"
+    apt:
+      pkg:
+      - mlocate
+      state: present
+    become: yes
