@@ -1,0 +1,10 @@
+- hosts: all
+  tasks:
+  - name: date "+%Y%m%d"
+    shell: date "+%Y%m%d"
+    register: result
+     check_mode: no
+
+  - name: debug result
+    debug:
+      msg: "{{ result }}"
