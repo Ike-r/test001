@@ -1,4 +1,5 @@
-
+ hosts: all
+  tasks:
   - name: date "+%Y%m%d"
     shell: date "+%Y%m%d"
     register: result
